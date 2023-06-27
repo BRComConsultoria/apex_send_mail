@@ -1,0 +1,40 @@
+<strong>Venda #ORDER_NUMBER# realizada</strong>,<br>
+<br>
+<table width="100%">
+  <tr>
+    <th align="left">Data</th>
+    <td align="left">#ORDER_DATE#</td>
+  </tr>
+  <tr>
+    <th align="left">Código da Venda</th>
+    <td align="left">#ORDER_NUMBER#</td>
+  </tr>
+  <tr>
+    <th align="left">Cliente</th>
+    <td align="left">#CUSTOMER_NAME#</td>
+  </tr>
+  <tr>
+      <td colspan="2" style="padding:8px, 0px; border-bottom: 1px solid #cecece; border-top:1px solid #cecece">
+        <table width="100%" class="itens-table">
+            <tbody>
+                    <tr><td align="right"><strong>Produto</strong></td>
+                        <td align="right"><strong>QTD</strong></td>
+                        <td align="right"><strong>Valor</strong></td>
+                    </tr>
+                    {loop ":" ITEMS_ORDERED/}
+                    <tr>
+                        {loop ";" APEX$ITEM/}
+                        <td align="right">&APEX$ITEM.</td>
+                        {endloop/}
+                    </tr>
+                    {endloop/}
+                </tbody>
+            </table>    
+        </td>  
+  </tr>
+  <tr>
+    <th align="right">Valor Total</th>
+    <td align="right"><strong>#ORDER_TOTAL#</strong></td>
+  </tr>
+</table>
+<br>
