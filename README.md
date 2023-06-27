@@ -1,6 +1,7 @@
 # apex_send_mail
 Envio de Emails com o Oracle Apex
 
+https://youtu.be/nPIcr1dnG6k
 Assista o vídeo do Youtube onde explico passo a passo como configurar e realizar o envio de e-mails, passando pelos tópicos abaixo.
 
 
